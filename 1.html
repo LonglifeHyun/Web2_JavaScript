@@ -3,6 +3,7 @@
 <head>
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
+  <script src="colors.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155239827-1"></script>
@@ -19,7 +20,7 @@
 
 <body>
   <h1> <strong><a href="index.html">LongLife's Winter Vacation PLAN</a></strong> </h1>
-  <h2>Web</h2> Study <img src="studyPLAN.png" width="100%"><br />
+  <h2>WEB - HTML</h2>
   <h3>웹에서는 이걸 배울거다!</h3>
   <ol>
     <li><a href="1.html">HTML</a></li>
@@ -27,6 +28,9 @@
     <li><a href="3.html">JavaScript</a></li>
   </ol>
   <h2>HTML</h2>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
   <p>HTML은 하이퍼텍스트 마크업 언어(HyperText Markup Language,
     문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)라는 의미의 웹 페이지를 위한
      지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적
@@ -88,6 +92,14 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+<script>
+  var alist = document.querySelectorAll('a');
+  var i = 0;
+  while(i<alist.length) {
+      alist[i].style.color='hotpink';
+      i++;
+  }
+</script>
 </body>
 
 </html>

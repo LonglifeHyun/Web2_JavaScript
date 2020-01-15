@@ -3,6 +3,8 @@
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <script src="colors.js"></script>
+
   <style>
     body {
       margin: 0;
@@ -55,7 +57,10 @@
     </ol>
 
     <div id="article">
-      <h2>CSS</h2>
+      <h2>WEB - CSS</h2>
+      <input type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
       <p>HTML 등의 마크업 언어로 작성된 문서가 실제로
          웹사이트에 표현되는 방법을 정해주는 언어. <br>
          CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을
@@ -64,7 +69,14 @@
     </div>
   </div>
 
-
+  <script>
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i<alist.length) {
+        alist[i].style.color='hotpink';
+        i++;
+    }
+  </script>
 </body>
 
 </html>
